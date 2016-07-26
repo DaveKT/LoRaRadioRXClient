@@ -8,7 +8,7 @@ This project enables two-way radio communication between clients using the Adafr
 
 ###Parts List
 
-Aside from the items listed below you'll also need a computer running the Arduino IDE version 1.6.9 or higher. Since this project is a radio communication project you'll need at least two builds in order to communicate (otherwise you're just sending messages into the aether). The approximate cost for a single radio is $70 US (not counting the computer). If you already have the Uno and just need the radio parts the cost is approximate $40 US.
+Aside from the items listed below you'll also need a computer running the Arduino IDE version 1.6.9 or higher. Since this project is a radio communication project you'll need at least two builds in order to communicate (otherwise you're just sending messages into the aether). The approximate cost for a single radio is $70 US (not counting the computer). If you already have the Uno and just need the radio parts the cost is approximately $40 US.
 
 *	Arduino/Genuino Uno x2
 *	RFM95W LoRa Radio Tranceiver Breakout x2
