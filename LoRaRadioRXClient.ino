@@ -15,6 +15,10 @@
 * Attribution:
 *   Parts of the code were taken from the tutorial for the RFM9x LoRa Packet Radio
 *   written by Limor Fried (ladyada).
+*   
+*   //TODO
+*   1.  Add operator name to the messages.
+*   2.  Review code comments
 */
 
 #include <SPI.h>
