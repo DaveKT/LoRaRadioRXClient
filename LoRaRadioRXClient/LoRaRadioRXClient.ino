@@ -29,6 +29,7 @@
 #define RFM95_INT 2
 #define RF95_FREQ 915.0 //acceptable values are 868 or 915 MHz
 #define RF95_PWR 23 //acceptable range is between 5 and 23 dBm
+String OPERATOR = "DKT"; //name of the user sending from this console
 
 RH_RF95 rf95(RFM95_CS, RFM95_INT);
 
@@ -80,6 +81,8 @@ void loop() {
 
   if (message != "") {
 
+    message = OPERATOR+": "+message;
+     
     //explode string to char array for sending
     int messageSize = message.length()+1;
     char radiopacket[messageSize];
@@ -92,7 +95,7 @@ void loop() {
     rf95.waitPacketSent();
 
     //report and clean up
-    Serial.print("Sent: "); Serial.println(message);
+    Serial.print(OPERATOR); Serial.print(": "); Serial.println(message);
     message="";
     
   } else {
