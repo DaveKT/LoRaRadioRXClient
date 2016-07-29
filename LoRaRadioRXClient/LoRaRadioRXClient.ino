@@ -29,7 +29,7 @@
 #define RFM95_RST 9
 #define RFM95_INT 2
 #define RF95_FREQ 915.0 //acceptable values are 868 or 915 MHz
-#define RF95_PWR 23 //acceptable range is between 5 and 23 dBm
+#define RF95_PWR 23 //acceptable range includes all integers between 5 and 23 dBm
 String OPERATOR = "DKT"; //name of the user sending from this console
 
 RH_RF95 rf95(RFM95_CS, RFM95_INT);
