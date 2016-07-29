@@ -15,10 +15,11 @@
 * Attribution:
 *   Parts of the code were taken from the tutorial for the RFM9x LoRa Packet Radio
 *   written by Limor Fried (ladyada).
+*   RadioHead Libraries were written by Mike McCauley.
+*   http://www.airspayce.com/mikem/arduino/RadioHead/index.html
 *   
 *   //TODO
-*   1.  Add operator name to the messages.
-*   2.  Review code comments
+*   1.  Review code comments
 */
 
 #include <SPI.h>
@@ -95,7 +96,7 @@ void loop() {
     rf95.waitPacketSent();
 
     //report and clean up
-    Serial.print(OPERATOR); Serial.print(": "); Serial.println(message);
+    Serial.println(message);
     message="";
     
   } else {
