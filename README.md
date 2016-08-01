@@ -24,3 +24,5 @@ TODO Steps will be written here once the project is tested and deployed.
 ###Hardware
 
 ![LoRa Packet Radio](LoRaRadioRXClientHardware.png)
+
+![LoRa Packet Radio Photo](LoRaRadioRXClientHardware.JPG)
