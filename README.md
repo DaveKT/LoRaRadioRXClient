@@ -20,3 +20,7 @@ Aside from the items listed below you'll also need a computer running the Arduin
 ###Deployment
 
 TODO Steps will be written here once the project is tested and deployed.
+
+###Hardware
+
+![LoRa Packet Radio](LoRaRadioRXClientHardware.png)
