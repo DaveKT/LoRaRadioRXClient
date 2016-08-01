@@ -1,7 +1,7 @@
 /*
 * Author: David Kolet-Tassara
 * Date:   July 26, 2016
-* Rev:    1.0
+* Rev:    1.1
 * Description:
 *   This sketch uses the RadioHead library to send and receive messages via the
 *   RFM95W LoRa Packet Radio sold by Adafruit. More information on the radio may
@@ -106,8 +106,8 @@ void loop() {
 
     if (rf95.recv(buf, &len))
     {
-      RH_RF95::printBuffer("Received: ", buf, len);
-      Serial.print("Got: "); Serial.println((char*)buf);
+      //RH_RF95::printBuffer("Received: ", buf, len);
+      Serial.println((char*)buf);
       Serial.print("RSSI: "); Serial.println(rf95.lastRssi(), DEC);
     }
   }
