@@ -43,6 +43,6 @@ Note that this radio breakout is designed to send on frequencies that are open f
 
 ![LoRa Packet Radio Photo](LoRaRadioRXClientHardware.JPG)
 
-![Feather LoRa Packet Radio](FeatherLora.jpg)
+![Feather LoRa Packet Radio](FeatherLora.JPG)
 
 ![Sample Communications](SampleComms.gif)
