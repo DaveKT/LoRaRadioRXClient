@@ -29,6 +29,10 @@ Aside from the items listed below you'll also need a computer running the Arduin
 10.	Type a message into the text field and press enter to transmit. Note, there is very little error handling. The author recommends typing "Over." when the sender is done sending text.
 11. Received messages will appear in the Serial Monitor along with the RSSI to reflect the quality of the signal from the remote transmitter.
 
+###Altername Build
+
+1.	This project may also be built using the [Adafruit Feather](https://www.adafruit.com/product/3178). That build uses a 3" wire whip antenna. See image below. The sketch for both radios (the Uno and the Feather versions) is the same except for the hardware pins. An alternate sketch, LoRaRadioRXClientFeather.ino, is provided for the Feather with the correct pins set. 
+
 #####SPECIAL NOTICE
 
 Note that this radio breakout is designed to send on frequencies that are open for use in the US without a license. It is possible, however, to configure the radio to operate in the US Amateur bands. If you are not a licensed US radio amateur operator do not alter the frequency. Also, if you wish to operate outside of the US Adafruit offers radios that transmit on alternate frequencies. See product site for more details.
@@ -38,5 +42,7 @@ Note that this radio breakout is designed to send on frequencies that are open f
 ![LoRa Packet Radio](LoRaRadioRXClientHardware.png)
 
 ![LoRa Packet Radio Photo](LoRaRadioRXClientHardware.JPG)
+
+![Feather LoRa Packet Radio](FeatherLora.jpg)
 
 ![Sample Communications](SampleComms.gif)
