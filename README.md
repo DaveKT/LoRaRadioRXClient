@@ -1,10 +1,10 @@
 ## LoRa Radio Transceiver Project
 
-###Purpose
+### Purpose
 
 This project enables two-way radio communication between clients using the Adafruit built [RFM95W LoRa Radio Transceiver Breakout](https://www.adafruit.com/products/3072) and the [RadioHead Packet Radio Library](http://www.airspayce.com/mikem/arduino/RadioHead/index.html).
 
-###Parts List
+### Parts List
 
 Aside from the items listed below you'll also need a computer running the Arduino IDE version 1.6.9 or higher. Since this project is a radio communication project you'll need at least two builds in order to communicate (otherwise you're just sending messages into the aether). The approximate cost for a single radio is $70 US (not counting the computer). If you already have the Uno and just need the radio parts the cost is approximately $40 US. Also, you can skip using the SMA connector and quad-band antenna listed below and just use a simple piece of wire if you don't want to spend the money or don't have performance requirements that require the antenna I used for this project.
 
@@ -15,7 +15,7 @@ Aside from the items listed below you'll also need a computer running the Arduin
 *	Half-Size Breadboard x2
 *	Jumper Wire and USB Cables
 
-###Deployment
+### Deployment
 
 1.	Build *at least* two radios. Thorough instructions are posted on [Adafruit's Tutorial for the RFM9X LoRa](https://learn.adafruit.com/adafruit-rfm69hcw-and-rfm96-rfm95-rfm98-lora-packet-padio-breakouts/overview) page. Note, for the more experienced user a simple wiring diagram is provided below.
 2.	If you don't already have the latest Arduino IDE download it from the [Arduino Download Site](https://www.arduino.cc/en/Main/Software) and install on two separate computers.
@@ -29,15 +29,15 @@ Aside from the items listed below you'll also need a computer running the Arduin
 10.	Type a message into the text field and press enter to transmit. Note, there is very little error handling. The author recommends typing "Over." when the sender is done sending text.
 11. Received messages will appear in the Serial Monitor along with the RSSI to reflect the quality of the signal from the remote transmitter.
 
-###Alternate Build
+### Alternate Build
 
-1.	This project may also be built using the [Adafruit Feather](https://www.adafruit.com/product/3178). That build uses a 3" wire whip antenna. See image below. The sketch for both radios (the Uno and the Feather versions) is the same except for the hardware pins. An alternate sketch, LoRaRadioRXClientFeather.ino, is provided for the Feather with the correct pins set. 
+1.	This project may also be built using the [Adafruit Feather](https://www.adafruit.com/product/3178). That build uses a 3" wire whip antenna. See image below. The sketch for both radios (the Uno and the Feather versions) is the same except for the hardware pins. An alternate sketch, LoRaRadioRXClientFeather.ino, is provided for the Feather with the correct pins set.
 
-#####SPECIAL NOTICE
+##### SPECIAL NOTICE
 
 Note that this radio breakout is designed to send on frequencies that are open for use in the US without a license. It is possible, however, to configure the radio to operate in the US Amateur bands. If you are not a licensed US radio amateur operator do not alter the frequency. Also, if you wish to operate outside of the US Adafruit offers radios that transmit on alternate frequencies. See product site for more details.
 
-###Hardware
+### Hardware
 
 ![LoRa Packet Radio](LoRaRadioRXClientHardware.png)
 
